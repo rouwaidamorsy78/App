@@ -1,0 +1,39 @@
+<div class="contact mt-4">
+    <div class="container">
+        <div class="content-contact">
+            <p class="text-uppercase fs-1 text-center fw-bold">contact section</p>
+            <div class="line d-flex flex-row justify-content-center mb-3">
+    <div class="f-line"></div>
+    <i class="fa-solid fa-star"></i>
+    <div class="sec-line"></div>
+</div>
+<div class="inputs-sec mb-5 mt-5">       
+
+ <div class="myinput text-center m-auto p-3 position-relative ">
+   <label  [class.d-none]="!focused['userName']" [class.active]="focused['userName']" >userName :</label>
+  <input (input)="riseLabel($event,'userName')" class="w-75 m-auto rounded p-3 border-bottom bg-transparent" type="text" placeholder="userName">
+  
+</div>
+<div class="myinput text-center m-auto p-3 position-relative ">
+   <label [class.d-none]="!focused['userAge']" [class.active]="focused['userAge']" >userAge :</label>
+  <input (input)="riseLabel($event,'userAge')" class="w-75 m-auto rounded p-3 border-bottom bg-transparent" type="text" placeholder="userAge">
+  
+</div>
+<div class="myinput text-center m-auto p-3 position-relative">
+  <label [class.d-none]="!focused['userEmail']" [class.active]="focused['userEmail']">userEmail :</label>
+  <input (input)="riseLabel($event,'userEmail')" class="w-75 m-auto rounded p-3 border-bottom bg-transparent" type="email" placeholder="userEmail">
+</div>
+
+<div class="myinput text-center m-auto p-3 position-relative">
+  <label [class.d-none]="!focused['userPassword']" [class.active]="focused['userPassword']">userPassword :</label>
+  <input (input)="riseLabel($event,'userPassword')" class="w-75 m-auto rounded p-3 border-bottom bg-transparent" type="password" placeholder="userPassword">
+</div>
+<button class="btn mt-3">send Message</button>
+</div>
+  
+        </div>
+    </div>
+    
+</div>
+
+

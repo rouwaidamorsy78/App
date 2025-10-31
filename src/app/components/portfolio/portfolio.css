@@ -1,0 +1,11 @@
+.portfolio{padding-top: 100px;}
+.content-portfolio p {color: #2C3E50;}
+.layer{position: absolute; top: 0; bottom: 0; left: 0; right: 0; background-color: #1abc9ce5; opacity:0;}
+.layer i{font-size: 90px; margin-top: 75px;}
+.layer:hover{opacity: 100%; transition: 0.5s; cursor: pointer;}
+.line i {color: #2C3E50; } 
+.f-line{border-bottom: 4px solid #2C3E50; width: 85px; height: 5px; margin-top: 5px; margin-right: 25px;}
+.sec-line{border-bottom: 4px solid #2C3E50; width: 85px; height: 1px; margin-top: 5px; margin-left: 25px;}
+.layer-img{top: 0;left: 0; right: 0 ; bottom: 0; background-color:rgba(0, 0, 255, 0.178); z-index: 10;}
+.img-me{width:45%;}
+.img-me img{width: 100%;} 

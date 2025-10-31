@@ -1,0 +1,34 @@
+<div class="portfolio">
+  <div (click)="closeLayer() " class="position-fixed layer-img d-flex justify-content-center align-items-center" [class.d-none]="openSlide">
+    <div (click)='$event.stopPropagation()' class="img-me">
+
+      <img [src]="isSelected">
+    </div>
+  </div>
+  <div class="container">
+    <div class="content-portfolio py-5 position-relative">
+
+      <p class="text-uppercase fs-1 text-center fw-bold">portfolio component</p>
+      <div class="line d-flex flex-row justify-content-center mb-3">
+        <div class="f-line"></div>
+        <i class="fa-solid fa-star"></i>
+        <div class="sec-line"></div>
+      </div>
+
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-5">
+        @for(image of imageArr;track $index){
+        <div (click)="openPhoto($index)" class="col">
+          <div class="card shadow-lg ">
+            <img [src]="image.imageUrl" class="rounded" [alt]="image.imageAlt">
+            <div class="layer text-center text-white rounded"><i class="fa-solid fa-plus"></i></div>
+          </div>
+        </div>
+        }
+
+
+      </div>
+    </div>
+
+
+  </div>
+</div>
