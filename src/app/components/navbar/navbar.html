@@ -1,20 +1,28 @@
- <nav [class]="navPadding" class="navbar navbar-expand-lg fixed-top">
-  <div class="container">
-    <a class="navbar-brand text-white fs-2 text-uppercase fw-bold" routerLink="home">Start Framework
+ <nav [class]="navPadding" class="navbar bg-foot-nav dark:bg-foot-nav-dark fixed end-0 start-0 z-30">
+   
+  <div class="container flex justify-between ">
+    <div >  <input 
+      id="switch-link"
+      type="checkbox"
+      (click)="toggleTheme($event)"
+      class="me-7 appearance-none relative inline-block rounded-full w-12 h-6 cursor-pointer before:inline-block before:absolute before:top-0 before:left-0 before:w-full before:h-full before:rounded-full before:bg-stone-200 before:transition-colors before:duration-200 before:ease-in after:absolute after:top-2/4 after:left-0 after:-translate-y-2/4 after:w-6 after:h-6 after:border after:border-stone-200 after:bg-white after:rounded-full checked:after:translate-x-full after:transition-all after:duration-200 after:ease-in disabled:opacity-50 disabled:cursor-not-allowed dark:after:bg-white checked:before:bg-stone-800 checked:after:border-stone-800"
+    />
+        <a class=" text-white text-3xl uppercase font-bold" routerLink="home">Start Framework
 </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav ms-auto mb-2 mb-lg-0 mx-3">
-        <li class="nav-item">
-          <a class="nav-link active text-white text-uppercase fw-bold mx-2" routerLinkActive="rounded ex" routerLink="about">About</a>
+  </div>
+
+   
+    <div class="">
+    
+      <ul class="flex">
+        <li class="">
+          <a class=" active text-white uppercase font-bold mx-4" routerLinkActive="p-2 rounded-md ex" routerLink="about">About</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link text-white text-uppercase fw-bold mx-2" routerLinkActive="rounded ex" routerLink="portfolio">Portfolio</a>
+        <li class="">
+          <a class=" text-white uppercase font-bold mx-4" routerLinkActive="p-2 rounded-md ex" routerLink="portfolio">Portfolio</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link text-white text-uppercase fw-bold mx-2" routerLinkActive="rounded ex" routerLink="contact">Contact</a>
+        <li class="">
+          <a class=" text-white uppercase font-bold mx-4" routerLinkActive="p-2 rounded-md ex" routerLink="contact">Contact</a>
         </li>
         
       </ul>

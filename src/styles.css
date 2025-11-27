@@ -1,1 +1,11 @@
-/* You can add global styles to this file, and also import other style files */
+@import "tailwindcss";
+@custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
+@theme{
+    --color-primary: #1ABC9C;
+    --color-primary-dark: #053345;
+    --color-foot-nav:#2C3E50;
+    --color-foot-nav-dark:#000;
+    --color-copyright:#1A252F;
+    --color-copyright-dark:#111;
+}
+.container{width: 80%; margin: auto;}

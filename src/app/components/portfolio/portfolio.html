@@ -1,25 +1,25 @@
 <div class="portfolio">
-  <div (click)="closeLayer() " class="position-fixed layer-img d-flex justify-content-center align-items-center" [class.d-none]="openSlide">
+  <div (click)="closeLayer() " class="fixed layer-img flex justify-center items-center" [class.hidden]="openSlide">
     <div (click)='$event.stopPropagation()' class="img-me">
 
       <img [src]="isSelected">
     </div>
   </div>
-  <div class="container">
-    <div class="content-portfolio py-5 position-relative">
+  <div class="container ">
+    <div class="content-portfolio py-6 relative">
 
-      <p class="text-uppercase fs-1 text-center fw-bold">portfolio component</p>
-      <div class="line d-flex flex-row justify-content-center mb-3">
-        <div class="f-line"></div>
-        <i class="fa-solid fa-star"></i>
-        <div class="sec-line"></div>
-      </div>
+      <p class="uppercase text-4xl text-center font-bold mt-6">portfolio component</p>
+                  <div class="line flex flex-row m-auto w-fit mt-4 mb-7">
+    <div class="f-line "></div>
+    <i class="fa-solid fa-star "></i>
+    <div class="sec-line"></div>
+</div>
 
-      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-5">
+      <div class="grid grid-cols-3 gap-11 ">
         @for(image of imageArr;track $index){
-        <div (click)="openPhoto($index)" class="col">
-          <div class="card shadow-lg ">
-            <img [src]="image.imageUrl" class="rounded" [alt]="image.imageAlt">
+        <div (click)="openPhoto($index)" class="">
+          <div class="relative shadow-lg ">
+            <img [src]="image.imageUrl" class="rounded-md" [alt]="image.imageAlt">
             <div class="layer text-center text-white rounded"><i class="fa-solid fa-plus"></i></div>
           </div>
         </div>

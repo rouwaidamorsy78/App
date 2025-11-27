@@ -19,5 +19,6 @@ import { NotFound } from './components/not-found/not-found';
 })
 export class App {
   protected readonly title = signal('app');
+  
 }
 
